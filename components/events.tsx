@@ -15,7 +15,7 @@ export default function Events() {
       color: "from-blue-500 to-blue-600",
     },
     {
-      date: "Wednesdays",
+      date: "Every Friday",
       time: "7:00 PM - 8:30 PM",
       title: "Prayer & Bible Study",
       description:

@@ -93,7 +93,7 @@ export default function About() {
               transition={{ duration: 0.6 }}
             >
               <h2 className="text-4xl font-serif  font-bold mb-3 text-balance bg-linear-to-br from-foreground to-foreground/70 bg-clip-text text-transparent">
-                Welcome to The Apostolic Church Canada
+                The Apostolic Church Canada
               </h2>
               <p className="text-lg font-serif text-muted-foreground mb-4 leading-relaxed">
                 Founded on the principles of apostolic faith and biblical truth,
@@ -198,15 +198,15 @@ export default function About() {
 
               {/* Main image */}
               <Image
-                src="/church-worship-community-gathering.jpg"
+                src="/abouttacc.jpg"
                 alt="TACC Community Worship and Fellowship"
-                className="relative rounded-2xl shadow-2xl w-full object-cover lg:aspect-square"
+                className="relative rounded-2xl shadow-2xl w-full object-cover "
                 width={600}
-                height={600}
+                height={700}
               />
 
               {/* Floating testimonial card */}
-              <motion.div
+              {/* <motion.div
                 className="absolute -bottom-6 -left-6 bg-background/95 backdrop-blur-sm border border-border rounded-2xl p-6 shadow-lg max-w-xs"
                 initial={{ opacity: 0, scale: 0.8, y: 20 }}
                 whileInView={{ opacity: 1, scale: 1, y: 0 }}
@@ -230,7 +230,7 @@ export default function About() {
                   "A church that truly feels like family. The teaching has
                   transformed our lives."
                 </p>
-              </motion.div>
+              </motion.div> */}
             </div>
           </motion.div>
         </motion.div>

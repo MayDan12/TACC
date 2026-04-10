@@ -16,7 +16,7 @@ export default function Contact() {
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
   ) => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
@@ -38,21 +38,21 @@ export default function Contact() {
     {
       icon: MapPin,
       title: "Main Location",
-      content: "123 Faith Street, Toronto, ON M5H 2N2",
+      content: "4544 Dufferin St, North York, ON M3H 5X2 (Room 201)",
       color: "from-blue-500 to-blue-600",
       description: "Visit us for Sunday service",
     },
     {
       icon: Phone,
       title: "Phone",
-      content: "(416) 555-0123",
+      content: "+1 647-806-2658",
       color: "from-amber-500 to-amber-600",
       description: "Mon-Fri, 9AM-5PM",
     },
     {
       icon: Mail,
       title: "Email",
-      content: "info@tacccanada.org",
+      content: "info@taclawnacanada.com",
       color: "from-purple-500 to-purple-600",
       description: "We'll respond within 24 hours",
     },
@@ -126,7 +126,7 @@ export default function Contact() {
                 return (
                   <motion.div
                     key={index}
-                    className="group flex gap-4 p-4 rounded-2xl bg-background border border-border/50 hover:border-border hover:shadow-lg transition-all duration-300 cursor-pointer"
+                    className="group flex gap-2 p-4 rounded-2xl bg-background border border-border/50 hover:border-border hover:shadow-lg transition-all duration-300 cursor-pointer"
                     variants={itemVariants}
                     whileHover={{ y: -5, scale: 1.02 }}
                   >

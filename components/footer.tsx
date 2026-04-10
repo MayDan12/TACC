@@ -163,9 +163,11 @@ export default function Footer() {
                 <MapPin className="w-5 h-5 text-primary-foreground/70 mt-0.5 lex-shrink-0" />
                 <div>
                   <p className="text-primary-foreground/80 text-sm leading-relaxed">
-                    123 Faith Street
+                    4544 Dufferin St,
                     <br />
-                    Toronto, ON M5H 2N2
+                    North York,
+                    <br />
+                    ON M3H 5X2 (Room 201)
                   </p>
                 </div>
               </div>
@@ -175,16 +177,16 @@ export default function Footer() {
                   href="tel:+14165550123"
                   className="text-primary-foreground/80 hover:text-primary-foreground text-sm transition-colors duration-300"
                 >
-                  (416) 555-0123
+                  +1 647-806-2658
                 </a>
               </div>
               <div className="flex items-center gap-3">
                 <Mail className="w-5 h-5 text-primary-foreground/70 shrink-0" />
                 <a
-                  href="mailto:info@tacccanada.org"
+                  href="mailto:info@taclawnacanada.com"
                   className="text-primary-foreground/80 hover:text-primary-foreground text-sm transition-colors duration-300"
                 >
-                  info@tacccanada.org
+                  info@taclawnacanada.com
                 </a>
               </div>
             </div>
