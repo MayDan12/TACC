@@ -12,6 +12,7 @@ import {
   Mail,
   Church,
 } from "lucide-react";
+import Image from "next/image";
 
 export default function Footer() {
   const socialLinks = [
@@ -72,8 +73,14 @@ export default function Footer() {
           {/* Brand Section */}
           <motion.div className="lg:col-span-1" variants={itemVariants}>
             <div className="flex items-center gap-3 mb-6">
-              <div className="flex items-center justify-center w-12 h-12 bg-primary-foreground/10 rounded-xl backdrop-blur-sm border border-primary-foreground/20">
-                <Church className="w-6 h-6 text-primary-foreground" />
+              <div className="flex items-center justify-center w-12 h-12 bg-primary-foreground/20 rounded-xl backdrop-blur-sm border border-primary-foreground/20">
+                <Image
+                  src="/tacclogo.png"
+                  alt="TACC"
+                  width={30}
+                  height={30}
+                  priority
+                />
               </div>
               <div>
                 <h3 className="font-bold text-xl">TACC</h3>
