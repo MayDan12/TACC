@@ -108,12 +108,12 @@ export default function Contact() {
               transition={{ duration: 0.6 }}
             >
               <h2 className="text-2xl font-serif md:text-5xl font-bold mb-3 text-balance bg-linear-to-br from-foreground to-foreground/70 bg-clip-text text-transparent">
-                We'd Love to Connect With You
+                We&apos;d Love to Connect With You
               </h2>
               <p className="text-lg font-serif text-muted-foreground mb-4 leading-relaxed">
                 Whether you have questions, want to visit us, or need prayer,
-                our church family is here for you. Reach out and let's start a
-                conversation about your spiritual journey.
+                our church family is here for you. Reach out and let&apos;s
+                start a conversation about your spiritual journey.
               </p>
             </motion.div>
 
@@ -199,7 +199,7 @@ export default function Contact() {
               viewport={{ once: true }}
               transition={{ delay: 0.1 }}
             >
-              We'll get back to you as soon as possible
+              We&apos;ll get back to you as soon as possible
             </motion.p>
 
             <div className="space-y-6">
