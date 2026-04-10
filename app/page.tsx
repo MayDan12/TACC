@@ -1,6 +1,5 @@
 import Hero from "@/components/hero";
 import About from "@/components/about";
-import Ministries from "@/components/ministries";
 import Beliefs from "@/components/beliefs";
 import Events from "@/components/events";
 import Testimonials from "@/components/testimonials";

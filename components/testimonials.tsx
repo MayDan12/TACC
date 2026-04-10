@@ -94,7 +94,7 @@ export default function Testimonials() {
                 </div>
               </div>
               <p className="text-muted-foreground italic leading-relaxed">
-                "{testimonial.content}"
+                &ldquo;{testimonial.content}&rdquo;
               </p>
             </motion.div>
           ))}

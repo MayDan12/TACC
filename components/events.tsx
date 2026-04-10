@@ -176,7 +176,7 @@ export default function Events() {
         >
           <div className="bg-muted/50 rounded-2xl p-8 max-w-2xl mx-auto border border-border/50">
             <h3 className="text-2xl font-bold mb-4 text-foreground">
-              Can't Find What You're Looking For?
+              Can&apos;t Find What You&apos;re Looking For?
             </h3>
             <p className="text-muted-foreground mb-6 max-w-md mx-auto">
               Check our full calendar for all upcoming events, special services,
