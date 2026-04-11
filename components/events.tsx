@@ -144,7 +144,7 @@ export default function Events() {
 
                     {/* Hover action */}
                     <Link
-                      href="/join-service"
+                      href="https://us02web.zoom.us/j/9365400459?pwd=T1pOYkh6aFczUVFMSmtrVlBTek8rZz09"
                       className="mt-4 opacity-0 group-hover:opacity-100 transform translate-y-2 group-hover:translate-y-0 transition-all duration-300"
                     >
                       <span className="inline-flex items-center text-sm font-medium text-primary">

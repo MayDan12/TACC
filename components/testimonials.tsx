@@ -48,7 +48,7 @@ export default function Testimonials() {
   };
 
   return (
-    <section className="py-16 font-serif bg-background">
+    <section className="py-6 lg:py-10 font-serif bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           className="text-center mb-16"
