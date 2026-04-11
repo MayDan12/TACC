@@ -1,6 +1,8 @@
 import type React from "react";
 import type { Metadata } from "next";
 import "./globals.css";
+import Header from "@/components/header";
+import Footer from "@/components/footer";
 
 export const metadata: Metadata = {
   title: "The Apostolic Church Canada (TACC) - Faith, Community, Hope",
@@ -33,7 +35,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="font-sans antialiased">{children}</body>
+      <body className="font-sans antialiased">
+        <Header />
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }

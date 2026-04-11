@@ -3,6 +3,8 @@
 import { easeOut, motion } from "framer-motion";
 import Image from "next/image";
 import { BookOpen, Users, Heart, Target, Calendar, MapPin } from "lucide-react";
+import Link from "next/link";
+import { VisitDialog } from "./visit-sunday";
 
 export default function About() {
   const features = [
@@ -167,21 +169,28 @@ export default function About() {
               viewport={{ once: true }}
               transition={{ delay: 0.4, duration: 0.5 }}
             >
-              <motion.button
+              {/* I want to use a dialog here */}
+              {/* <motion.button
                 className="px-8 py-4 bg-linear-to-r from-primary to-primary/90 text-primary-foreground font-semibold rounded-full hover:shadow-lg transition-all duration-300 flex items-center gap-2 justify-center"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-              >
-                <Calendar className="w-5 h-5" />
-                Visit This Sunday
-              </motion.button>
+              > */}
+              <VisitDialog />
+              {/* </motion.button> */}
+              {/* can i make this link to map location of the church (4544 Dufferin St, North York, ON M3H 5X2 (Room 201))? */}
               <motion.button
-                className="px-8 py-4 border border-primary text-primary font-semibold rounded-full hover:bg-primary/5 transition-all duration-300 flex items-center gap-2 justify-center"
+                className="px-8 py-4 border border-primary text-primary font-semibold rounded-full hover:bg-primary/5 transition-all duration-300"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
-                <MapPin className="w-5 h-5" />
-                Get Directions
+                <Link
+                  href="https://www.google.com/maps/search/?api=1&query=4544+Dufferin+St,+North+York,+ON+M3H+5X2"
+                  target="_blank"
+                  className="flex items-center gap-2 justify-center"
+                >
+                  <MapPin className="w-5 h-5" />
+                  Get Directions
+                </Link>
               </motion.button>
             </motion.div>
           </motion.div>

@@ -145,9 +145,7 @@ export default function Footer() {
                 <MapPin className="w-5 h-5 text-primary-foreground/70 mt-0.5 lex-shrink-0" />
                 <div>
                   <p className="text-primary-foreground/80 text-sm leading-relaxed">
-                    4544 Dufferin St,
-                    <br />
-                    North York,
+                    4544 Dufferin St, North York,
                     <br />
                     ON M3H 5X2 (Room 201)
                   </p>

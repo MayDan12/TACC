@@ -50,8 +50,9 @@ export default function Contact() {
       // ✅ Success
       console.log("Message sent successfully");
       setFormData({ name: "", email: "", phone: "", message: "" });
-    } catch (error: any) {
-      console.error("Error submitting form:", error.message);
+    } catch (error: unknown) {
+      const message = error instanceof Error ? error.message : String(error);
+      console.error("Error submitting form:", message);
     } finally {
       // ✅ Always runs (success or error)
       setIsSubmitting(false);

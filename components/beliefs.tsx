@@ -21,7 +21,7 @@ export default function Beliefs() {
       color: "from-amber-500 to-amber-600",
     },
     {
-      title: "Rule of Conducts",
+      title: "Code of Conducts",
       description:
         "We believe in the power and presence of the Holy Spirit to transform lives and empower believers.",
       icon: Zap,
@@ -98,7 +98,7 @@ export default function Beliefs() {
               />
 
               {/* Floating badge */}
-              <motion.div
+              {/* <motion.div
                 className="absolute -bottom-6 -right-6 bg-linear-to-br from-primary to-primary/90 text-primary-foreground px-6 py-4 rounded-2xl shadow-lg"
                 initial={{ opacity: 0, scale: 0.8 }}
                 whileInView={{ opacity: 1, scale: 1 }}
@@ -111,7 +111,7 @@ export default function Beliefs() {
                     Years of Truth
                   </div>
                 </div>
-              </motion.div>
+              </motion.div> */}
             </div>
           </motion.div>
 

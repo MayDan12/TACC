@@ -5,7 +5,6 @@ import Events from "@/components/events";
 import Testimonials from "@/components/testimonials";
 import Contact from "@/components/contact";
 import Header from "@/components/header";
-import Footer from "@/components/footer";
 
 export const metadata = {
   title: "The Apostolic Church Canada (TACC) - Faith, Community, Hope",
@@ -16,7 +15,6 @@ export const metadata = {
 export default function Home() {
   return (
     <main className="bg-background">
-      <Header />
       <Hero />
       <About />
       {/* <Ministries /> */}
@@ -24,7 +22,6 @@ export default function Home() {
       <Events />
       {/* <Testimonials /> */}
       <Contact />
-      <Footer />
     </main>
   );
 }

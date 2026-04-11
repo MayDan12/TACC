@@ -94,11 +94,9 @@ export default function Header() {
             <Link href="#about" className={`block ${linkClassName}`}>
               About
             </Link>
-            <Link href="#ministries" className={`block ${linkClassName}`}>
-              Ministries
-            </Link>
-            <Link href="#beliefs" className={`block ${linkClassName}`}>
-              Beliefs
+
+            <Link href="/doctrine" className={`block ${linkClassName}`}>
+              Doctrine
             </Link>
             <Link href="#events" className={`block ${linkClassName}`}>
               Events
