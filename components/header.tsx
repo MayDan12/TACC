@@ -65,9 +65,6 @@ export default function Header() {
             <Link href="#about" className={linkClassName}>
               About
             </Link>
-            <Link href="#ministries" className={linkClassName}>
-              Ministries
-            </Link>
             <Link href="/doctrine" className={linkClassName}>
               Doctrine
             </Link>
