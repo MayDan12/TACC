@@ -26,12 +26,36 @@ export default function Contact() {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Simulate form submission
-    await new Promise((resolve) => setTimeout(resolve, 1000));
+    const payload = new FormData();
+    payload.append("access_key", "2fa48591-872a-412c-a621-9fc8b7c10b0d");
+    payload.append("name", formData.name);
+    payload.append("email", formData.email);
+    payload.append("phone", formData.phone);
+    payload.append("message", formData.message);
+    payload.append("reply_to", formData.email);
+    payload.append("from_name", "The Apostolic Church Lawna Canada");
 
-    console.log("Form submitted:", formData);
-    setFormData({ name: "", email: "", phone: "", message: "" });
-    setIsSubmitting(false);
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: payload,
+      });
+
+      const data = await response.json();
+
+      if (!response.ok || !data.success) {
+        throw new Error(data.message || "Something went wrong");
+      }
+
+      // ✅ Success
+      console.log("Message sent successfully");
+      setFormData({ name: "", email: "", phone: "", message: "" });
+    } catch (error: any) {
+      console.error("Error submitting form:", error.message);
+    } finally {
+      // ✅ Always runs (success or error)
+      setIsSubmitting(false);
+    }
   };
 
   const contactInfo = [
@@ -88,7 +112,7 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="py-16 md:py-32 bg-linear-to-b from-background to-muted/30"
+      className="py-10 md:py-32 bg-linear-to-b from-background to-muted/30"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
@@ -107,7 +131,7 @@ export default function Contact() {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              <h2 className="text-2xl font-serif md:text-5xl font-bold mb-3 text-balance bg-linear-to-br from-foreground to-foreground/70 bg-clip-text text-transparent">
+              <h2 className="text-2xl font-serif md:text-4xl font-bold mb-3 text-balance bg-linear-to-br from-foreground to-foreground/70 bg-clip-text text-transparent">
                 We&apos;d Love to Connect With You
               </h2>
               <p className="text-lg font-serif text-muted-foreground mb-4 leading-relaxed">
@@ -126,12 +150,12 @@ export default function Contact() {
                 return (
                   <motion.div
                     key={index}
-                    className="group flex gap-2 p-4 rounded-2xl bg-background border border-border/50 hover:border-border hover:shadow-lg transition-all duration-300 cursor-pointer"
+                    className="group items-center justify-center flex gap-2 px-4 py-2 rounded-2xl bg-background border border-border/50 hover:border-border hover:shadow-lg transition-all duration-300 cursor-pointer"
                     variants={itemVariants}
                     whileHover={{ y: -5, scale: 1.02 }}
                   >
                     <div
-                      className={`shrink-0 flex items-center justify-center h-12 w-12 rounded-xl bg-linear-to-br ${item.color} text-white shadow-lg group-hover:scale-110 transition-transform duration-300`}
+                      className={`shrink-0 flex items-center justify-center h-10 w-10 rounded-xl bg-linear-to-br ${item.color} text-white shadow-lg group-hover:scale-110 transition-transform duration-300`}
                     >
                       <IconComponent className="w-6 h-6" />
                     </div>
@@ -153,7 +177,7 @@ export default function Contact() {
 
             {/* Additional Info */}
             <motion.div
-              className="mt-12 p-8 rounded-2xl bg-linear-to-br from-primary/5 to-primary/10 border border-primary/20"
+              className="mt-6 p-8 rounded-2xl bg-linear-to-br from-primary/5 to-primary/10 border border-primary/20"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -190,7 +214,7 @@ export default function Contact() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
             >
-              Send Us a Message
+              Send Us a Message/Prayer Request
             </motion.h3>
             <motion.p
               className="text-muted-foreground mb-8"
@@ -202,7 +226,7 @@ export default function Contact() {
               We&apos;ll get back to you as soon as possible
             </motion.p>
 
-            <div className="space-y-6">
+            <div className="space-y-3">
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}

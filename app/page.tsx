@@ -22,7 +22,7 @@ export default function Home() {
       {/* <Ministries /> */}
       <Beliefs />
       <Events />
-      <Testimonials />
+      {/* <Testimonials /> */}
       <Contact />
       <Footer />
     </main>
