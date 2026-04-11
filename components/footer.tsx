@@ -209,11 +209,11 @@ export default function Footer() {
                   <span>10:00 AM</span>
                 </div>
                 <div className="flex justify-between">
-                  <span>Wednesday Prayer:</span>
+                  <span>Thursday Prayer:</span>
                   <span>7:00 PM</span>
                 </div>
                 <div className="flex justify-between">
-                  <span>Youth Fellowship:</span>
+                  <span>Friday Bible Study:</span>
                   <span>Sat 6:00 PM</span>
                 </div>
               </div>
