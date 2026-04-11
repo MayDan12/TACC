@@ -44,20 +44,20 @@ export default function Header() {
     <header
       className={`${headerClassName} sticky top-0 z-50 transition-colors duration-300`}
     >
-      <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+      <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2">
         <div className="flex justify-between items-center">
           <Link href="/" className="flex items-center gap-2">
             {/* oval div */}
             {/* <div className="w-17 h-17 bg-accent rounded-3xl flex items-center justify-center"> */}
             <Image
-              src="/tacclogo.png"
-              alt="TACC"
-              width={30}
-              height={30}
+              src="/taccblack.png"
+              alt="The Apostolic Church Lawna Canada"
+              width={140}
+              height={140}
               priority
             />
 
-            <span className="font-bold text-xl">TACC</span>
+            {/* <span className="font-bold text-xl">TACC</span> */}
           </Link>
 
           {/* Desktop Menu */}
@@ -68,8 +68,8 @@ export default function Header() {
             <Link href="#ministries" className={linkClassName}>
               Ministries
             </Link>
-            <Link href="#beliefs" className={linkClassName}>
-              Beliefs
+            <Link href="/doctrine" className={linkClassName}>
+              Doctrine
             </Link>
             <Link href="#events" className={linkClassName}>
               Events

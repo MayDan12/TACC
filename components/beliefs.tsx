@@ -14,21 +14,21 @@ export default function Beliefs() {
       color: "from-blue-500 to-blue-600",
     },
     {
-      title: "Salvation in Christ",
+      title: "Rule of Belief",
       description:
         "We affirm that Jesus Christ is Lord and Savior, and salvation comes through faith in Him alone.",
       icon: Cross,
       color: "from-amber-500 to-amber-600",
     },
     {
-      title: "The Holy Spirit",
+      title: "Rule of Conducts",
       description:
         "We believe in the power and presence of the Holy Spirit to transform lives and empower believers.",
       icon: Zap,
       color: "from-purple-500 to-purple-600",
     },
     {
-      title: "Baptism & Communion",
+      title: "Tenets",
       description:
         "We practice believer's baptism and communion as acts of obedience and remembrance of Christ's work.",
       icon: Droplets,
@@ -68,7 +68,7 @@ export default function Beliefs() {
   return (
     <section
       id="beliefs"
-      className="py-20 font-serif bg-linear-to-br from-background via-background to-muted/20"
+      className="py-6 lg:py-10 font-serif bg-linear-to-br from-background via-background to-muted/20"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
@@ -124,7 +124,7 @@ export default function Beliefs() {
               transition={{ duration: 0.6 }}
             >
               <h2 className="text-2xl font-serif md:text-3xl lg:text-4xl font-bold mb-3 text-balance bg-linear-to-br from-foreground to-foreground/70 bg-clip-text text-transparent">
-                Our Foundation of Faith
+                Our Doctrine
               </h2>
               <p className="text-lg font-serif text-muted-foreground mb-8 leading-relaxed max-w-lg">
                 Grounded in biblical truth, we stand on the timeless principles

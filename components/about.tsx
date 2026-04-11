@@ -74,7 +74,7 @@ export default function About() {
   return (
     <section
       id="about"
-      className="py-20  bg-linear-to-br from-background via-background to-muted/20"
+      className="py-6 lg:py-10 mt-10 bg-linear-to-br from-background via-background to-muted/20"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
@@ -92,20 +92,20 @@ export default function About() {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              <h2 className="text-4xl font-serif  font-bold mb-3 text-balance bg-linear-to-br from-foreground to-foreground/70 bg-clip-text text-transparent">
-                The Apostolic Church Canada
+              <h2 className="text-3xl font-serif  font-bold mb-3 text-balance bg-linear-to-br from-foreground to-foreground/70 bg-clip-text text-transparent">
+                The Apostolic Church Lawna Canada
               </h2>
               <p className="text-lg font-serif text-muted-foreground mb-4 leading-relaxed">
                 Founded on the principles of apostolic faith and biblical truth,
-                TACC is committed to creating a welcoming community where people
-                can encounter Christ, grow spiritually, and live out their
-                God-given purpose.
+                The Church is committed to creating a welcoming community where
+                people can encounter Christ, grow spiritually, and live out
+                their God-given purpose.
               </p>
             </motion.div>
 
             {/* Features Grid */}
             <motion.div
-              className="grid sm:grid-cols-2 gap-3 mb-6"
+              className="grid sm:grid-cols-2 gap-2 mb-4"
               variants={containerVariants}
             >
               {features.map((feature, index) => {
@@ -136,7 +136,7 @@ export default function About() {
             </motion.div>
 
             {/* Stats */}
-            <motion.div
+            {/* <motion.div
               className="grid font-serif grid-cols-2 lg:grid-cols-4 gap-6 mb-12"
               initial="hidden"
               whileInView="visible"
@@ -157,7 +157,7 @@ export default function About() {
                   </div>
                 </motion.div>
               ))}
-            </motion.div>
+            </motion.div> */}
 
             {/* Call to Action */}
             <motion.div
@@ -202,7 +202,7 @@ export default function About() {
                 alt="TACC Community Worship and Fellowship"
                 className="relative rounded-2xl shadow-2xl w-full object-cover "
                 width={600}
-                height={700}
+                height={600}
               />
 
               {/* Floating testimonial card */}

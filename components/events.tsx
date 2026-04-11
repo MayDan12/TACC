@@ -2,6 +2,7 @@
 
 import { easeOut, motion } from "framer-motion";
 import { Calendar, Clock, Users, HeartHandshake } from "lucide-react";
+import Link from "next/link";
 
 export default function Events() {
   const events = [
@@ -15,27 +16,28 @@ export default function Events() {
       color: "from-blue-500 to-blue-600",
     },
     {
-      date: "Every Friday",
-      time: "7:00 PM - 8:30 PM",
-      title: "Prayer & Bible Study",
-      description:
-        "Dive deeper into God's Word through group study and intercession",
-      icon: Clock,
-      color: "from-amber-500 to-amber-600",
-    },
-    {
-      date: "Saturdays",
-      time: "6:00 PM - 8:00 PM",
-      title: "Youth Fellowship",
+      date: "Every Thursday",
+      time: "7:00 PM - 8:00 PM",
+      title: "Prayer Meeting",
       description:
         "Connect with other young believers in worship and community activities",
       icon: Users,
       color: "from-green-500 to-green-600",
     },
     {
+      date: "Every Friday",
+      time: "7:00 PM - 8:00 PM",
+      title: "Bible Study",
+      description:
+        "Dive deeper into God's Word through group study and intercession",
+      icon: Clock,
+      color: "from-amber-500 to-amber-600",
+    },
+
+    {
       date: "Monthly",
-      time: "Various Times",
-      title: "Community Service",
+      time: "1st Sunday of Every Month",
+      title: "Communion Service",
       description:
         "Serve our neighbors and make a difference in our local community",
       icon: HeartHandshake,
@@ -66,7 +68,7 @@ export default function Events() {
   return (
     <section
       id="events"
-      className="py-20 font-serif bg-linear-to-b from-background to-muted/30"
+      className="py-16 font-serif bg-linear-to-b from-background to-muted/30"
     >
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
@@ -86,7 +88,7 @@ export default function Events() {
         </motion.div>
 
         <motion.div
-          className="grid lg:grid-cols-2 gap-8"
+          className="grid lg:grid-cols-2 gap-6"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.1 }}
@@ -141,9 +143,12 @@ export default function Events() {
                     </p>
 
                     {/* Hover action */}
-                    <div className="mt-4 opacity-0 group-hover:opacity-100 transform translate-y-2 group-hover:translate-y-0 transition-all duration-300">
+                    <Link
+                      href="/join-service"
+                      className="mt-4 opacity-0 group-hover:opacity-100 transform translate-y-2 group-hover:translate-y-0 transition-all duration-300"
+                    >
                       <span className="inline-flex items-center text-sm font-medium text-primary">
-                        Learn more
+                        Join Service
                         <svg
                           className="w-4 h-4 ml-1 transform group-hover:translate-x-1 transition-transform duration-300"
                           fill="none"
@@ -158,7 +163,7 @@ export default function Events() {
                           />
                         </svg>
                       </span>
-                    </div>
+                    </Link>
                   </div>
                 </div>
               </motion.div>

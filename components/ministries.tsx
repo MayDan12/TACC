@@ -79,7 +79,7 @@ export default function Ministries() {
   return (
     <section
       id="ministries"
-      className="py-20 font-serif bg-linear-to-b from-muted/30 to-background"
+      className="py-16 font-serif bg-linear-to-b from-muted/30 to-background"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
