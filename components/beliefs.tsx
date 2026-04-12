@@ -3,6 +3,7 @@
 import { easeOut, motion } from "framer-motion";
 import { BookOpen, Cross, Zap, Droplets } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Beliefs() {
   const beliefs = [
@@ -172,12 +173,17 @@ export default function Beliefs() {
               transition={{ delay: 0.6, duration: 0.5 }}
             >
               <motion.button
-                className="px-8 py-4 bg-linear-to-r font-serif from-primary to-primary/90 text-primary-foreground font-semibold rounded-full hover:shadow-lg transition-all duration-300 flex items-center gap-2 justify-center"
+                className="px-8 py-4 bg-linear-to-r font-serif from-primary to-primary/90 text-primary-foreground font-semibold rounded-full hover:shadow-lg transition-all duration-300 "
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
-                <BookOpen className="w-5 h-5" />
-                Read Our Full Doctrine
+                <Link
+                  href="/doctrine"
+                  className="flex items-center gap-2 justify-center"
+                >
+                  <BookOpen className="w-5 h-5" />
+                  Read Our Full Doctrine
+                </Link>
               </motion.button>
               <motion.button
                 className="px-8 py-4 border font-serif border-primary text-primary font-semibold rounded-full hover:bg-primary/5 transition-all duration-300"

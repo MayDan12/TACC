@@ -172,7 +172,7 @@ export default function Events() {
         </motion.div>
 
         {/* Call to Action */}
-        <motion.div
+        {/* <motion.div
           className="text-center mt-16"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -204,7 +204,7 @@ export default function Events() {
               </motion.button>
             </div>
           </div>
-        </motion.div>
+        </motion.div> */}
       </div>
     </section>
   );
