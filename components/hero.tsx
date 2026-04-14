@@ -33,6 +33,21 @@ export default function Hero({
               mobileSrc: "/mobilebanner.png",
               alt: "Bible prayer spiritual faith",
             },
+            {
+              src: "/desktopbanner1.jpg",
+              mobileSrc: "/mobilebanner.png",
+              alt: "Motto for the Year",
+            },
+            {
+              src: "/desktopbanner2.jpg",
+              mobileSrc: "/mobilebanner.png",
+              alt: "Church Location",
+            },
+            {
+              src: "/desktopbanner3.jpg",
+              mobileSrc: "/mobilebanner.png",
+              alt: "Community Gathering",
+            },
           ],
     [images],
   );

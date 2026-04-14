@@ -115,7 +115,7 @@ export default function Events() {
                 <div className="flex gap-6 items-start">
                   {/* Icon with linear */}
                   <div
-                    className={`flex-shrink-0 flex items-center justify-center h-16 w-16 rounded-xl bg-linear-to-br ${event.color} text-white shadow-lg group-hover:scale-110 transition-transform duration-300`}
+                    className={`shrink-0 flex items-center justify-center h-16 w-16 rounded-xl bg-linear-to-br ${event.color} text-white shadow-lg group-hover:scale-110 transition-transform duration-300`}
                   >
                     <IconComponent className="w-7 h-7" />
                   </div>
