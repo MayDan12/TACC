@@ -35,7 +35,7 @@ export default function Hero({
             },
             {
               src: "/desktopbanner1.jpg",
-              mobileSrc: "/mobilebanner.png",
+              mobileSrc: "/mobilebanner3.jpg",
               alt: "Motto for the Year",
             },
             {
@@ -45,7 +45,7 @@ export default function Hero({
             },
             {
               src: "/desktopbanner3.jpg",
-              mobileSrc: "/mobilebanner.png",
+              mobileSrc: "/mobilebanner2.jpg",
               alt: "Community Gathering",
             },
           ],
